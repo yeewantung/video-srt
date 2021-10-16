@@ -35,7 +35,7 @@ func NewApp(cfg string) *VideoSrt {
 
 //读取配置
 func ReadConfig (cfg string) *VideoSrt {
-	if file, e := ini.LoadConfigFile(cfg , ".");e != nil  {
+	if file, e := ini.LoadFiles(cfg , ".");e != nil  {
 		panic(e);
 	} else {
 		appconfig := &VideoSrt{}
