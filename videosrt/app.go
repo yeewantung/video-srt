@@ -2,7 +2,7 @@ package videosrt
 
 import (
 	"bytes"
-	"config.ini"
+	"ini"
 	"github.com/yeewantung/video-srt/videosrt/aliyun/cloud"
 	"github.com/yeewantung/video-srt/videosrt/aliyun/oss"
 	"github.com/yeewantung/video-srt/videosrt/ffmpeg"
