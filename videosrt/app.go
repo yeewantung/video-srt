@@ -2,7 +2,7 @@ package videosrt
 
 import (
 	"bytes"
-	"github.com/gookit/ini/v2"
+	"gopkg.in/ini.v1"
 	"github.com/yeewantung/video-srt/videosrt/aliyun/cloud"
 	"github.com/yeewantung/video-srt/videosrt/aliyun/oss"
 	"github.com/yeewantung/video-srt/videosrt/ffmpeg"
@@ -35,7 +35,7 @@ func NewApp(cfg string) *VideoSrt {
 
 //读取配置
 func ReadConfig (cfg string) *VideoSrt {
-	if file, e := ini.LoadFiles(cfg);e != nil  {
+	if file, e := ini.Load(cfg);e != nil  {
 		panic(e);
 	} else {
 		appconfig := &VideoSrt{}
