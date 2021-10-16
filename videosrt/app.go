@@ -2,7 +2,7 @@ package videosrt
 
 import (
 	"bytes"
-	"github.com/gookit/config@v1.1.0/ini"
+	"github.com/gookit/ini"
 	"github.com/yeewantung/video-srt/videosrt/aliyun/cloud"
 	"github.com/yeewantung/video-srt/videosrt/aliyun/oss"
 	"github.com/yeewantung/video-srt/videosrt/ffmpeg"
